@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{551B7CF1-FDC5-487C-8FD2-6B7D59E63256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{328954E0-182C-4886-AC99-AEA98D2E4340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{530947C7-D50B-45EA-A45B-1556A9737E79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{551B7CF1-FDC5-487C-8FD2-6B7D59E63256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{551B7CF1-FDC5-487C-8FD2-6B7D59E63256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{551B7CF1-FDC5-487C-8FD2-6B7D59E63256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{551B7CF1-FDC5-487C-8FD2-6B7D59E63256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328954E0-182C-4886-AC99-AEA98D2E4340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328954E0-182C-4886-AC99-AEA98D2E4340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328954E0-182C-4886-AC99-AEA98D2E4340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328954E0-182C-4886-AC99-AEA98D2E4340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{530947C7-D50B-45EA-A45B-1556A9737E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{530947C7-D50B-45EA-A45B-1556A9737E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{530947C7-D50B-45EA-A45B-1556A9737E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{530947C7-D50B-45EA-A45B-1556A9737E79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45
+		SolutionGuid = {8301FFFA-B5F6-4CDE-8DF5-3830FD6B3F35}
+	EndGlobalSection
+EndGlobal

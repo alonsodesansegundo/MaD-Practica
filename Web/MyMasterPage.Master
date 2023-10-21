@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMasterPage.master.cs"
+    Inherits="Es.Udc.DotNet.PracticaMaD.Web.Pages.MyMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MaD-06</title>
+    <link href="~/Css/Styles.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <style>
+        .badge {
+            display: inline-block;
+            padding: 0.25em 0.4em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 10rem;
+        }
+
+        .badge-primary {
+            color: #fff;
+            background-color: #007bff;
+        }
+    </style>
+
+    <div id="window">
+        <!-- Page title. -->
+        <div id="pageTitle">
+            <asp:Localize ID="txtPageTitle" runat="server" meta:resourcekey="txtPageTitle" />
+        </div>
+        <!-- Menu -->
+        <div id="menu">
+            <span id="menuLinks">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder_MenuLinks" runat="server">
+                    <asp:HyperLink ID="txtInicio" runat="server"
+                        NavigateUrl="~/Pages/Index.aspx"
+                        meta:resourcekey="txtInicio" />
+
+                    <asp:HyperLink ID="lnkMyProfile" runat="server"
+                        NavigateUrl="~/Pages/User/UpdateUserProfile.aspx"
+                        meta:resourcekey="txtPerfil" />
+
+                    <asp:HyperLink ID="lnkMyOrders" runat="server"
+                        NavigateUrl="~/Pages/User/MyOrders.aspx"
+                        meta:resourcekey="txtPedidos" />
+
+                    <asp:HyperLink ID="lnkMyShoppingCart" runat="server"
+                        NavigateUrl="~/Pages/Shopping/ShoppingCart.aspx"
+                        meta:resourcekey="txtCarrito" />
+
+                    <asp:HyperLink ID="lnkAuthenticate" runat="server"
+                        NavigateUrl="~/Pages/User/Authentication.aspx"
+                        meta:resourcekey="txtInicioSesion" />
+
+                    <asp:HyperLink ID="lnkLogout" runat="server"
+                        NavigateUrl="~/Pages/User/Logout.aspx"
+                        meta:resourcekey="txtCerrarSesion" />
+                </asp:ContentPlaceHolder>
+            </span>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <asp:Repeater ID="RepeaterTags" runat="server">
+                    <ItemTemplate>
+
+                                <asp:HyperLink class="badge badge-primary" runat="server"
+                                    Style='<%#"font-size: " +  DataBinder.Eval(Container.DataItem, "fontSize") + "px;"%>'
+                                    NavigateUrl='<%# "~/Pages/Product/ShowProducts.aspx?keywords=&category=&tag="+ DataBinder.Eval(Container.DataItem, "name") %>'
+                                    Text='<%# DataBinder.Eval(Container.DataItem, "name") %>'
+                                    meta:resourcekey="HyperLinkResource1">
+                                           </asp:HyperLink>
+  
+                    </ItemTemplate>
+                </asp:Repeater>
+
+            </div>
+        </nav>
+
+        <!-- Body content -->
+        <div>
+            <!-- Identifica el espacio del contenido -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!--Footer. -->
+        <div id="footer">
+            <asp:Localize ID="txtFooter" runat="server" meta:resourcekey="txtFooter" />
+        </div>
+        <!-- End of Window. -->
+    </div>
+    <!-- End of HTML body. -->
+</body>
+<!-- End of HTML. -->
+</html>

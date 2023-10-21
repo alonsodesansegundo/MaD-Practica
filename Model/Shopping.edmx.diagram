@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1117292ecac34b86b5163f9f7a7f72a3" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="shoppingModel.Book" Width="1.5" PointX="9.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingModel.Category" Width="1.5" PointX="10.875" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingModel.Comment" Width="1.5" PointX="8.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingModel.CreditCard" Width="1.5" PointX="0.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingModel.Movie" Width="1.5" PointX="7.125" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingModel.Order" Width="1.5" PointX="3.375" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingModel.OrderLine" Width="1.5" PointX="5.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingModel.Product" Width="1.5" PointX="8.375" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingModel.Tag" Width="1.5" PointX="11" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingModel.User" Width="1.5" PointX="3.375" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="shoppingModel.FK_ProductCateogryId" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingModel.FK_CommentProductId" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingModel.FK_CommentUserId" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingModel.FK_CreditCardUserId" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingModel.FK_OrderCreditCardId" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingModel.FK_OrderLineOrderId" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingModel.FK_OrderUserId" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingModel.FK_OrderLineProductId" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingModel.TagComment" ManuallyRouted="false" />
+        <InheritanceConnector EntityType="shoppingModel.Movie" />
+        <InheritanceConnector EntityType="shoppingModel.Book" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

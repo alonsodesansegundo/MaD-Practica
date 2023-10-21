@@ -1,0 +1,10 @@
+.vs/
+.vs/PracticaMaD/v16/.suo
+Model/Model.csproj.user
+**/Debug/
+.suo
+/packages
+/Web/bin
+/Web/Content
+/Test/bin
+/Test/obj
